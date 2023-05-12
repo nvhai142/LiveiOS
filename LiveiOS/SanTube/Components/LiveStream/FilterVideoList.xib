@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterVideoList" customModule="SanTube" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="bX5-Iz-fzk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8m-Qf-5n9">
+                    <rect key="frame" x="10" y="5" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.97784598214285712" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="aEa-LC-mdZ"/>
+                        <constraint firstAttribute="height" constant="40" id="avP-DS-dS1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="Style 1"/>
+                    <connections>
+                        <action selector="actionFilterChoise:" destination="-1" eventType="touchUpInside" id="hok-a8-6sX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkU-FD-dUh">
+                    <rect key="frame" x="60" y="5" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="m9J-Qm-7DY"/>
+                        <constraint firstAttribute="height" constant="40" id="xLR-E0-r6E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Style 2"/>
+                    <connections>
+                        <action selector="actionFilterChoise:" destination="-1" eventType="touchUpInside" id="K5a-tg-xX4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xt-JN-18z">
+                    <rect key="frame" x="110" y="5" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5FY-f6-ouR"/>
+                        <constraint firstAttribute="width" constant="40" id="cvu-Um-Vtv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Style 3"/>
+                    <connections>
+                        <action selector="actionFilterChoise:" destination="-1" eventType="touchUpInside" id="SQ3-r9-E7d"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqc-0x-WuU">
+                    <rect key="frame" x="160" y="5" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="LAG-37-f09"/>
+                        <constraint firstAttribute="height" constant="40" id="X6q-tq-Rsx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Style 4"/>
+                    <connections>
+                        <action selector="actionFilterChoise:" destination="-1" eventType="touchUpInside" id="JH4-ZR-OYR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="qqc-0x-WuU" firstAttribute="leading" secondItem="0xt-JN-18z" secondAttribute="trailing" constant="10" id="6aS-vv-8bw"/>
+                <constraint firstItem="0xt-JN-18z" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="6ha-uV-329"/>
+                <constraint firstItem="qqc-0x-WuU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="Hhf-gT-Syk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="N8m-Qf-5n9" secondAttribute="bottom" constant="5" id="I32-Qp-Mtx"/>
+                <constraint firstItem="0xt-JN-18z" firstAttribute="leading" secondItem="nkU-FD-dUh" secondAttribute="trailing" constant="10" id="NqW-7M-fYx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0xt-JN-18z" secondAttribute="bottom" constant="5" id="PDY-d4-8Hk"/>
+                <constraint firstItem="nkU-FD-dUh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="TlC-J8-l4g"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qqc-0x-WuU" secondAttribute="bottom" constant="5" id="W1Y-BW-D0U"/>
+                <constraint firstItem="N8m-Qf-5n9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="XnQ-TJ-gLq"/>
+                <constraint firstItem="nkU-FD-dUh" firstAttribute="leading" secondItem="N8m-Qf-5n9" secondAttribute="trailing" constant="10" id="a1T-cB-hjl"/>
+                <constraint firstItem="N8m-Qf-5n9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="dLW-hT-jJ9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nkU-FD-dUh" secondAttribute="bottom" constant="5" id="v2N-pj-ulU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="26.5" y="53"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateProductController" customModule="SanTube" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomConstraint" destination="2aG-FR-BaJ" id="e5M-Wd-zNj"/>
+                <outlet property="buttonLeadingConstraint" destination="Kof-MB-Dt5" id="adh-mE-wnB"/>
+                <outlet property="buttonTrailingConstraint" destination="FWU-ha-oZc" id="BN4-qP-bES"/>
+                <outlet property="scrollView" destination="dBK-8L-IOI" id="k4E-Jv-qeG"/>
+                <outlet property="stackContainer" destination="r10-C9-l56" id="lkj-3G-k7l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBK-8L-IOI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r10-C9-l56">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="r10-C9-l56" secondAttribute="trailing" id="T9w-F5-ElF"/>
+                        <constraint firstItem="r10-C9-l56" firstAttribute="leading" secondItem="dBK-8L-IOI" secondAttribute="leading" id="dmc-cf-ZWk"/>
+                        <constraint firstItem="r10-C9-l56" firstAttribute="top" secondItem="dBK-8L-IOI" secondAttribute="top" id="htM-oW-vuf"/>
+                        <constraint firstAttribute="bottom" secondItem="r10-C9-l56" secondAttribute="bottom" priority="2" id="oFN-aQ-05x"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1i-NQ-bKr">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zR-8Y-MuM">
+                            <rect key="frame" x="207.5" y="5" width="140" height="40"/>
+                            <color key="backgroundColor" red="0.90196078430000004" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="Akn-ec-20E"/>
+                                <constraint firstAttribute="height" constant="40" id="rdu-Zl-eAB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Add product">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionAddProduct:" destination="-1" eventType="touchUpInside" id="u8l-RA-jpt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKe-Tw-PMe">
+                            <rect key="frame" x="27.5" y="5" width="150" height="40"/>
+                            <color key="backgroundColor" red="0.90196078430000004" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="9QW-4N-YfA"/>
+                                <constraint firstAttribute="height" constant="40" id="zFy-Z6-AlP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Pick from previous">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionPickPrevious:" destination="-1" eventType="touchUpInside" id="AUE-OF-DGX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2zR-8Y-MuM" firstAttribute="centerY" secondItem="d1i-NQ-bKr" secondAttribute="centerY" id="8ex-qN-Vl4"/>
+                        <constraint firstAttribute="trailing" secondItem="2zR-8Y-MuM" secondAttribute="trailing" constant="27.5" id="FWU-ha-oZc"/>
+                        <constraint firstAttribute="height" constant="50" id="JXu-bR-h9K"/>
+                        <constraint firstItem="cKe-Tw-PMe" firstAttribute="leading" secondItem="d1i-NQ-bKr" secondAttribute="leading" constant="27.5" id="Kof-MB-Dt5"/>
+                        <constraint firstItem="cKe-Tw-PMe" firstAttribute="centerY" secondItem="d1i-NQ-bKr" secondAttribute="centerY" id="xXV-bP-suI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="d1i-NQ-bKr" firstAttribute="top" secondItem="dBK-8L-IOI" secondAttribute="bottom" constant="10" id="2aG-FR-BaJ"/>
+                <constraint firstItem="dBK-8L-IOI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2kf-Vi-n8j"/>
+                <constraint firstItem="d1i-NQ-bKr" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="EZZ-AW-4nL"/>
+                <constraint firstItem="dBK-8L-IOI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FWF-Zx-u2Y"/>
+                <constraint firstItem="dBK-8L-IOI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IXc-YK-lYM"/>
+                <constraint firstItem="r10-C9-l56" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="NAi-pb-2nu"/>
+                <constraint firstItem="d1i-NQ-bKr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="WfN-0p-dVd"/>
+                <constraint firstItem="d1i-NQ-bKr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="akw-QR-ZGM"/>
+                <constraint firstItem="r10-C9-l56" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="2" id="fhc-Qi-S6I"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

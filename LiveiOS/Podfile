@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target ‘SanTube’ do
+  use_frameworks!
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'Alamofire'
+  pod 'Localize-Swift'
+  pod 'ijkplayer'
+  pod 'TLPhotoPicker'
+  pod 'Socket.IO-Client-Swift'
+  pod 'Daysquare', :git => 'https://github.com/unixzii/Daysquare.git'
+end

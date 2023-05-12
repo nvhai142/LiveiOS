@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CategoriesListView" customModule="SanTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="614" height="256"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-dS-9nL">
+                    <rect key="frame" x="0.0" y="0.0" width="614" height="256"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xhk-3i-BF4">
+                            <rect key="frame" x="0.0" y="0.0" width="614" height="216"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abw-jJ-rLg">
+                                    <rect key="frame" x="0.0" y="0.0" width="614" height="166"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKO-Dh-GEL">
+                                            <rect key="frame" x="0.0" y="5" width="614" height="183"/>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="cKO-Dh-GEL" secondAttribute="trailing" priority="250" id="Lov-yz-Lth"/>
+                                        <constraint firstItem="cKO-Dh-GEL" firstAttribute="leading" secondItem="abw-jJ-rLg" secondAttribute="leading" id="YNJ-er-ymi"/>
+                                        <constraint firstAttribute="height" secondItem="cKO-Dh-GEL" secondAttribute="height" priority="250" id="dcK-gt-bcl"/>
+                                        <constraint firstItem="cKO-Dh-GEL" firstAttribute="width" secondItem="abw-jJ-rLg" secondAttribute="width" priority="250" id="o0i-vj-ghw"/>
+                                        <constraint firstAttribute="bottom" secondItem="cKO-Dh-GEL" secondAttribute="bottom" id="rdJ-YG-cvF"/>
+                                        <constraint firstItem="cKO-Dh-GEL" firstAttribute="top" secondItem="abw-jJ-rLg" secondAttribute="top" constant="5" id="u7Y-Is-adi"/>
+                                    </constraints>
+                                </scrollView>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juj-un-CVn">
+                                    <rect key="frame" x="0.0" y="166" width="614" height="50"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nnL-UJ-Sul">
+                                            <rect key="frame" x="0.0" y="5" width="614" height="183"/>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="nnL-UJ-Sul" firstAttribute="width" secondItem="juj-un-CVn" secondAttribute="width" priority="250" id="4Ps-Co-RZ1"/>
+                                        <constraint firstItem="nnL-UJ-Sul" firstAttribute="top" secondItem="juj-un-CVn" secondAttribute="top" constant="5" id="81o-ys-QYY"/>
+                                        <constraint firstItem="nnL-UJ-Sul" firstAttribute="leading" secondItem="juj-un-CVn" secondAttribute="leading" id="Aax-Rs-a7a"/>
+                                        <constraint firstAttribute="bottom" secondItem="nnL-UJ-Sul" secondAttribute="bottom" id="IiE-ys-e1y"/>
+                                        <constraint firstAttribute="height" secondItem="nnL-UJ-Sul" secondAttribute="height" priority="250" id="NQC-M4-b7o"/>
+                                        <constraint firstAttribute="trailing" secondItem="nnL-UJ-Sul" secondAttribute="trailing" priority="250" id="Y6s-oz-xTb"/>
+                                    </constraints>
+                                </scrollView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIK-PP-hm1">
+                            <rect key="frame" x="0.0" y="216" width="614" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uli-Pd-KPC">
+                                    <rect key="frame" x="10" y="14.5" width="594" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Uli-Pd-KPC" secondAttribute="bottom" constant="5" id="VwI-73-ZoO"/>
+                                <constraint firstAttribute="height" constant="40" id="ZvE-OF-i3Q"/>
+                                <constraint firstAttribute="trailing" secondItem="Uli-Pd-KPC" secondAttribute="trailing" constant="10" id="cMR-83-4Ui"/>
+                                <constraint firstItem="Uli-Pd-KPC" firstAttribute="leading" secondItem="OIK-PP-hm1" secondAttribute="leading" constant="10" id="nXQ-Gc-edg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sHm-dS-9nL" secondAttribute="bottom" id="BgN-4T-gLn"/>
+                <constraint firstItem="sHm-dS-9nL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="MP2-uZ-SEE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sHm-dS-9nL" secondAttribute="trailing" id="j2G-V0-UOQ"/>
+                <constraint firstItem="sHm-dS-9nL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tdf-oK-Uiw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="constraintHeightTitle" destination="ZvE-OF-i3Q" id="3xw-T1-szl"/>
+                <outlet property="lblCate" destination="Uli-Pd-KPC" id="T4E-je-N1G"/>
+                <outlet property="scrollViewOne" destination="abw-jJ-rLg" id="yq3-oa-Ddc"/>
+                <outlet property="scrollViewTwo" destination="juj-un-CVn" id="fot-us-NnQ"/>
+                <outlet property="stackContainer" destination="sHm-dS-9nL" id="cy5-zw-5qU"/>
+                <outlet property="stackRowOne" destination="cKO-Dh-GEL" id="9Ec-O4-oga"/>
+                <outlet property="stackRowTwo" destination="nnL-UJ-Sul" id="sj5-aW-07A"/>
+                <outlet property="vwTitle" destination="OIK-PP-hm1" id="7NI-cx-LNN"/>
+            </connections>
+            <point key="canvasLocation" x="-99" y="-240"/>
+        </view>
+    </objects>
+</document>

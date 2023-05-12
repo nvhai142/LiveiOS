@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchController" customModule="SanTube" customModuleProvider="target">
+            <connections>
+                <outlet property="indicator" destination="VN1-fA-Dla" id="LGp-x6-Yte"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="qd8-LP-PUc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCl-fg-n8n">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.778746698943662" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_santube" translatesAutoresizingMaskIntoConstraints="NO" id="JcR-s5-Hzk">
+                    <rect key="frame" x="137" y="163" width="120" height="141"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="AlI-3a-wWA"/>
+                        <constraint firstAttribute="height" constant="141" id="Qiy-H5-maR"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="VN1-fA-Dla">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cCl-fg-n8n" secondAttribute="trailing" id="2ZB-kJ-HxT"/>
+                <constraint firstAttribute="bottom" secondItem="cCl-fg-n8n" secondAttribute="bottom" id="2df-Y3-9X8"/>
+                <constraint firstItem="VN1-fA-Dla" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Hi8-kY-11L"/>
+                <constraint firstItem="qd8-LP-PUc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QJ7-P3-XYA"/>
+                <constraint firstAttribute="trailing" secondItem="qd8-LP-PUc" secondAttribute="trailing" id="Xjj-eg-EcX"/>
+                <constraint firstItem="VN1-fA-Dla" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XoR-CC-KMB"/>
+                <constraint firstItem="JcR-s5-Hzk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.7" id="b6A-2J-0ba"/>
+                <constraint firstItem="cCl-fg-n8n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="csv-Mv-imK"/>
+                <constraint firstItem="qd8-LP-PUc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kcB-TT-cWi"/>
+                <constraint firstItem="cCl-fg-n8n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ku5-9q-fo8"/>
+                <constraint firstItem="JcR-s5-Hzk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="1.05" id="mWq-jb-TMU"/>
+                <constraint firstAttribute="bottom" secondItem="qd8-LP-PUc" secondAttribute="bottom" id="nDM-0O-zFh"/>
+            </constraints>
+            <point key="canvasLocation" x="-88" y="51"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Splash" width="360" height="640"/>
+        <image name="ic_santube" width="122" height="144"/>
+    </resources>
+</document>

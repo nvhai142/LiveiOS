@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ListViewStreams" customModule="SanTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="442"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XR6-iZ-Wnj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="442"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q3-Q1-62V" userLabel="title">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ik0-Ck-hNd">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="442"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="e7E-B6-0P5"/>
+                                <outlet property="delegate" destination="-1" id="aXv-LL-jES"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XR6-iZ-Wnj" secondAttribute="trailing" id="E95-rm-DjF"/>
+                <constraint firstAttribute="bottom" secondItem="XR6-iZ-Wnj" secondAttribute="bottom" id="bIT-Rl-Re5"/>
+                <constraint firstItem="XR6-iZ-Wnj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dTq-mS-wvb"/>
+                <constraint firstItem="XR6-iZ-Wnj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eSv-J5-bOQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblTitle" destination="3q3-Q1-62V" id="NlG-cO-V4s"/>
+                <outlet property="tableView" destination="ik0-Ck-hNd" id="59W-Gq-e8i"/>
+            </connections>
+            <point key="canvasLocation" x="-55" y="-379"/>
+        </view>
+    </objects>
+</document>

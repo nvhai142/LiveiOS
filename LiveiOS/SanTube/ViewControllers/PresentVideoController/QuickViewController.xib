@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuickViewController" customModule="SanTube" customModuleProvider="target">
+            <connections>
+                <outlet property="btnClose" destination="Naz-uC-5k0" id="5eb-PJ-QL0"/>
+                <outlet property="iconScrollDown" destination="oaN-sg-t0V" id="4PM-Sm-Mte"/>
+                <outlet property="iconScrollUp" destination="lJn-MS-5IB" id="XQf-R4-OaF"/>
+                <outlet property="scrollView" destination="gPI-Sn-wRf" id="IKA-9q-o6Y"/>
+                <outlet property="stackContainer" destination="wvC-5F-AZG" id="Fcq-ZS-1v9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPI-Sn-wRf">
+                    <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wvC-5F-AZG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wvC-5F-AZG" firstAttribute="top" secondItem="gPI-Sn-wRf" secondAttribute="top" id="F6a-gR-8Uv"/>
+                        <constraint firstItem="wvC-5F-AZG" firstAttribute="leading" secondItem="gPI-Sn-wRf" secondAttribute="leading" id="OMd-eO-Ejv"/>
+                        <constraint firstAttribute="bottom" secondItem="wvC-5F-AZG" secondAttribute="bottom" priority="1" id="bsa-dy-3WM"/>
+                        <constraint firstAttribute="trailing" secondItem="wvC-5F-AZG" secondAttribute="trailing" id="hwW-yv-07c"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Naz-uC-5k0">
+                    <rect key="frame" x="379" y="35" width="30" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="RHw-ej-aX0"/>
+                        <constraint firstAttribute="width" constant="30" id="jag-Ex-o4u"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" image="icon_close"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="jy7-Zy-f1H"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lJn-MS-5IB">
+                    <rect key="frame" x="199.66666666666666" y="30" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="Bu6-wd-jh3"/>
+                        <constraint firstAttribute="height" constant="15" id="qY4-zP-ZJU"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oaN-sg-t0V">
+                    <rect key="frame" x="199.66666666666666" y="711" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="XEq-DX-Ttm"/>
+                        <constraint firstAttribute="width" constant="15" id="jSE-Bt-TL4"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Naz-uC-5k0" secondAttribute="trailing" constant="5" id="26c-y6-BPi"/>
+                <constraint firstAttribute="trailing" secondItem="gPI-Sn-wRf" secondAttribute="trailing" id="9xO-kZ-Wa3"/>
+                <constraint firstItem="gPI-Sn-wRf" firstAttribute="top" secondItem="49W-QS-L9I" secondAttribute="top" id="BVK-rA-X8M"/>
+                <constraint firstItem="lJn-MS-5IB" firstAttribute="top" secondItem="gPI-Sn-wRf" secondAttribute="top" constant="10" id="DVI-t1-0p4"/>
+                <constraint firstItem="wvC-5F-AZG" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="1" id="FsQ-K0-nNY"/>
+                <constraint firstItem="49W-QS-L9I" firstAttribute="bottom" secondItem="gPI-Sn-wRf" secondAttribute="bottom" id="T7U-nF-fmh"/>
+                <constraint firstItem="wvC-5F-AZG" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="VCY-it-i5f"/>
+                <constraint firstItem="gPI-Sn-wRf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aEm-LX-b9M"/>
+                <constraint firstItem="oaN-sg-t0V" firstAttribute="bottom" secondItem="gPI-Sn-wRf" secondAttribute="bottom" constant="-10" id="hDU-5B-yMT"/>
+                <constraint firstItem="Naz-uC-5k0" firstAttribute="top" secondItem="49W-QS-L9I" secondAttribute="top" constant="15" id="os9-Uh-NqU"/>
+                <constraint firstItem="oaN-sg-t0V" firstAttribute="centerX" secondItem="gPI-Sn-wRf" secondAttribute="centerX" id="uiR-S2-BRe"/>
+                <constraint firstItem="lJn-MS-5IB" firstAttribute="centerX" secondItem="gPI-Sn-wRf" secondAttribute="centerX" id="voi-ev-3Hf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="49W-QS-L9I"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_close" width="15" height="15"/>
+    </resources>
+</document>

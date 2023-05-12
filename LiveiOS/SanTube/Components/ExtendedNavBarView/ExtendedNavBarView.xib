@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ExtendedNavBarView" customModule="SanTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hlt-8I-GjM" userLabel="stackTab">
+                    <rect key="frame" x="10" y="40" width="99" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrj-ol-W02">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4Y-Sf-pDg">
+                            <rect key="frame" x="57" y="0.0" width="42" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="1" constant="150" id="RSF-3P-fgj"/>
+                        <constraint firstAttribute="height" constant="40" id="e9h-Ep-MZ9"/>
+                    </constraints>
+                </stackView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHF-Ju-lAT">
+                    <rect key="frame" x="10" y="40" width="42" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WTP-ft-ZaV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zff-pL-qgt">
+                    <rect key="frame" x="301" y="40" width="64" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="JJM-vi-1PC"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Code" image="icon_number_pad">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBL-65-eU7">
+                    <rect key="frame" x="10" y="69" width="10" height="2"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="cSh-xw-q0E"/>
+                        <constraint firstAttribute="height" constant="1.5" id="o3k-hs-h1C"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.9882352941176471" green="0.80784313725490198" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FBL-65-eU7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="6Qk-54-wgx"/>
+                <constraint firstAttribute="trailing" secondItem="Zff-pL-qgt" secondAttribute="trailing" constant="10" id="82z-wB-WFX"/>
+                <constraint firstItem="Zff-pL-qgt" firstAttribute="leading" secondItem="IHF-Ju-lAT" secondAttribute="trailing" priority="250" constant="10" id="9Z1-U6-fZN"/>
+                <constraint firstItem="IHF-Ju-lAT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="AgR-rL-4z3"/>
+                <constraint firstAttribute="bottom" secondItem="Zff-pL-qgt" secondAttribute="bottom" id="PNt-Cj-IMM"/>
+                <constraint firstAttribute="bottom" secondItem="FBL-65-eU7" secondAttribute="bottom" constant="9" id="YYQ-9A-hGn"/>
+                <constraint firstItem="Hlt-8I-GjM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="dfk-X6-2VU"/>
+                <constraint firstAttribute="bottom" secondItem="Hlt-8I-GjM" secondAttribute="bottom" id="xdl-SX-5wr"/>
+                <constraint firstAttribute="bottom" secondItem="IHF-Ju-lAT" secondAttribute="bottom" id="y3C-dk-rlt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCode" destination="Zff-pL-qgt" id="8o7-aK-cYf"/>
+                <outlet property="constraintLeadingHighlight" destination="6Qk-54-wgx" id="zBC-Uu-38s"/>
+                <outlet property="constraintWidthHighlight" destination="cSh-xw-q0E" id="yHg-fZ-FxA"/>
+                <outlet property="lblAllCategories" destination="P4Y-Sf-pDg" id="7Yd-2P-0Io"/>
+                <outlet property="lblFeatured" destination="Vrj-ol-W02" id="aOG-qh-b19"/>
+                <outlet property="lblTitle" destination="IHF-Ju-lAT" id="Nr2-25-jwB"/>
+                <outlet property="stackTabb" destination="Hlt-8I-GjM" id="hqf-k9-fSd"/>
+                <outlet property="vwHightLight" destination="FBL-65-eU7" id="8zJ-Qe-T8Z"/>
+            </connections>
+            <point key="canvasLocation" x="69.5" y="-58"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_number_pad" width="20" height="26"/>
+    </resources>
+</document>

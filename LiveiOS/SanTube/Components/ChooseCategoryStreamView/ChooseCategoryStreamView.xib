@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ChooseCategoryStreamView" customModule="SanTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1e-8n-zfq">
+                    <rect key="frame" x="0.0" y="0.0" width="401" height="73"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z8t-fu-dTY">
+                            <rect key="frame" x="0.0" y="0.0" width="401" height="73"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="z8t-fu-dTY" firstAttribute="bottom" secondItem="h1e-8n-zfq" secondAttribute="bottom" id="09w-98-ar5"/>
+                        <constraint firstItem="z8t-fu-dTY" firstAttribute="top" secondItem="h1e-8n-zfq" secondAttribute="top" id="RiN-Un-o3d"/>
+                        <constraint firstAttribute="trailing" secondItem="z8t-fu-dTY" secondAttribute="trailing" priority="1" id="hXA-JS-5lH"/>
+                        <constraint firstItem="z8t-fu-dTY" firstAttribute="leading" secondItem="h1e-8n-zfq" secondAttribute="leading" id="wch-c5-2C4"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="h1e-8n-zfq" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="2CZ-S4-pf0"/>
+                <constraint firstItem="h1e-8n-zfq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2vJ-on-tay"/>
+                <constraint firstItem="z8t-fu-dTY" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" priority="250" id="8hj-Xx-QSI"/>
+                <constraint firstAttribute="trailing" secondItem="h1e-8n-zfq" secondAttribute="trailing" id="YOt-Yu-eV0"/>
+                <constraint firstItem="h1e-8n-zfq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aD5-sK-ODn"/>
+                <constraint firstItem="z8t-fu-dTY" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="wYd-ba-crp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="scrollView" destination="h1e-8n-zfq" id="Zis-0B-bJu"/>
+                <outlet property="stackCategories" destination="z8t-fu-dTY" id="Db3-LA-sD8"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="-680.5"/>
+        </view>
+    </objects>
+</document>

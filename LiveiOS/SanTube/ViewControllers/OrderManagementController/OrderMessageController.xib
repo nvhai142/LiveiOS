@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderMessageController" customModule="SanTube" customModuleProvider="target">
+            <connections>
+                <outlet property="imvAlert" destination="ynN-ad-cj5" id="oMh-eY-25f"/>
+                <outlet property="lblMessage" destination="zQI-BH-l7R" id="wIU-Bj-d50"/>
+                <outlet property="lblNote" destination="h27-Ee-sTx" id="ubL-GY-2pT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwContainer" destination="4I7-8l-UsZ" id="gMS-Kh-KTi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4I7-8l-UsZ">
+                    <rect key="frame" x="37" y="275.5" width="300" height="136"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynN-ad-cj5" customClass="UIImageViewRound" customModule="SanTube" customModuleProvider="target">
+                            <rect key="frame" x="130" y="30" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="6zi-LZ-6BO"/>
+                                <constraint firstAttribute="height" constant="40" id="FhZ-hl-BKM"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQI-BH-l7R">
+                            <rect key="frame" x="20" y="85" width="260" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h27-Ee-sTx">
+                            <rect key="frame" x="248" y="110" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="zQI-BH-l7R" firstAttribute="top" secondItem="ynN-ad-cj5" secondAttribute="bottom" constant="15" id="AuH-NI-7zf"/>
+                        <constraint firstAttribute="bottom" secondItem="zQI-BH-l7R" secondAttribute="bottom" constant="30" id="LEH-SG-90B"/>
+                        <constraint firstItem="ynN-ad-cj5" firstAttribute="top" secondItem="4I7-8l-UsZ" secondAttribute="top" constant="30" id="S68-Ye-hzg"/>
+                        <constraint firstAttribute="trailing" secondItem="h27-Ee-sTx" secondAttribute="trailing" constant="10" id="UFp-xe-eaP"/>
+                        <constraint firstAttribute="bottom" secondItem="h27-Ee-sTx" secondAttribute="bottom" constant="5" id="ZIq-of-YmT"/>
+                        <constraint firstAttribute="width" constant="300" id="hbQ-fA-Qth"/>
+                        <constraint firstAttribute="height" priority="1" constant="128" id="ra6-xX-rdV"/>
+                        <constraint firstAttribute="trailing" secondItem="zQI-BH-l7R" secondAttribute="trailing" constant="20" id="t8K-BS-kgS"/>
+                        <constraint firstItem="zQI-BH-l7R" firstAttribute="leading" secondItem="4I7-8l-UsZ" secondAttribute="leading" constant="20" id="uuA-ur-qoT"/>
+                        <constraint firstItem="ynN-ad-cj5" firstAttribute="centerX" secondItem="4I7-8l-UsZ" secondAttribute="centerX" id="xsC-Ng-d8u"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4I7-8l-UsZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="inJ-uX-OOg"/>
+                <constraint firstItem="4I7-8l-UsZ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="xVK-D6-Rbn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4f48bc30-9c53-4051-ae9e-8c7c4fa4d3d2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "4f48bc30-9c53-4051-ae9e-8c7c4fa4d3d2" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4f48bc30-9c53-4051-ae9e-8c7c4fa4d3d2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "32DCD198-46B7-42FA-BFCB-58FA30683877",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4f48bc30-9c53-4051-ae9e-8c7c4fa4d3d2" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BUUP",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Artifacts\/SourceCode\/IOS App\/BUUP\/BUUP.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.s3corp.com.vn:8443\/Projects\/BUUP",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4f48bc30-9c53-4051-ae9e-8c7c4fa4d3d2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.s3corp.com.vn:8443\/Projects\/27Global",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4f48bc30-9c53-4051-ae9e-8c7c4fa4d3d2"
+    }
+  ]
+}

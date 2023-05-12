@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="p82-XX-8MD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="0rl-az-HIU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhc-eO-buO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.77874669890000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_santube" translatesAutoresizingMaskIntoConstraints="NO" id="lty-GO-Dtx">
+                                <rect key="frame" x="137" y="163" width="120" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="jIT-7H-4zd"/>
+                                    <constraint firstAttribute="width" constant="120" id="w4w-ov-65t"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lty-GO-Dtx" firstAttribute="centerX" secondItem="p82-XX-8MD" secondAttribute="centerX" multiplier="1.05" id="3JD-aZ-VVf"/>
+                            <constraint firstItem="lty-GO-Dtx" firstAttribute="centerY" secondItem="p82-XX-8MD" secondAttribute="centerY" multiplier="0.7" id="3VI-xH-FpC"/>
+                            <constraint firstAttribute="trailing" secondItem="0rl-az-HIU" secondAttribute="trailing" id="B1j-n7-TSG"/>
+                            <constraint firstItem="Nhc-eO-buO" firstAttribute="top" secondItem="p82-XX-8MD" secondAttribute="top" id="KxY-p8-HiV"/>
+                            <constraint firstAttribute="bottom" secondItem="0rl-az-HIU" secondAttribute="bottom" id="ZPU-fZ-v73"/>
+                            <constraint firstItem="Nhc-eO-buO" firstAttribute="leading" secondItem="p82-XX-8MD" secondAttribute="leading" id="bKB-QU-Uqw"/>
+                            <constraint firstAttribute="bottom" secondItem="Nhc-eO-buO" secondAttribute="bottom" id="iyM-Qj-hIJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Nhc-eO-buO" secondAttribute="trailing" id="jiv-IA-SfD"/>
+                            <constraint firstItem="0rl-az-HIU" firstAttribute="top" secondItem="p82-XX-8MD" secondAttribute="top" id="kfD-m4-IZZ"/>
+                            <constraint firstItem="0rl-az-HIU" firstAttribute="leading" secondItem="p82-XX-8MD" secondAttribute="leading" id="tFB-wW-xMg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash" width="360" height="640"/>
+        <image name="ic_santube" width="122" height="144"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectOrderItemController" customModule="SanTube" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNote" destination="EOj-Sn-Izk" id="s8i-Db-gil"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwListProducts" destination="Jkt-Mu-SJV" id="vb1-Ko-cGi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YXZ-zD-PId">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgX-6H-gbc">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOj-Sn-Izk">
+                                    <rect key="frame" x="20" y="10" width="335" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wu9-Ml-ouK">
+                                    <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                                    <color key="backgroundColor" red="0.66274509800000003" green="0.66274509800000003" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="750" constant="1" id="Wjh-gF-eNi"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Wu9-Ml-ouK" firstAttribute="leading" secondItem="EgX-6H-gbc" secondAttribute="leading" id="DfQ-Ug-RBQ"/>
+                                <constraint firstAttribute="bottom" secondItem="EOj-Sn-Izk" secondAttribute="bottom" priority="750" constant="10" id="Fvf-rj-oe2"/>
+                                <constraint firstAttribute="trailing" secondItem="Wu9-Ml-ouK" secondAttribute="trailing" id="Fy7-c1-IRv"/>
+                                <constraint firstAttribute="bottom" secondItem="Wu9-Ml-ouK" secondAttribute="bottom" id="erQ-0d-JQd"/>
+                                <constraint firstAttribute="trailing" secondItem="EOj-Sn-Izk" secondAttribute="trailing" priority="750" constant="20" id="gES-0E-s2e"/>
+                                <constraint firstItem="EOj-Sn-Izk" firstAttribute="top" secondItem="EgX-6H-gbc" secondAttribute="top" priority="750" constant="10" id="pD8-mo-5fG"/>
+                                <constraint firstItem="EOj-Sn-Izk" firstAttribute="leading" secondItem="EgX-6H-gbc" secondAttribute="leading" priority="750" constant="20" id="rVe-jl-31N"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jkt-Mu-SJV" customClass="ListProductView" customModule="SanTube" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="60" width="375" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Y2G-M7-88e"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YXZ-zD-PId" secondAttribute="trailing" id="EA7-xm-PRy"/>
+                <constraint firstItem="YXZ-zD-PId" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ELA-iN-GZt"/>
+                <constraint firstItem="YXZ-zD-PId" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gax-3B-tfh"/>
+                <constraint firstAttribute="bottom" secondItem="YXZ-zD-PId" secondAttribute="bottom" priority="250" id="u7f-yG-mRa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

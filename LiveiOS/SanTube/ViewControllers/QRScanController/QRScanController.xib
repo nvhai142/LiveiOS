@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRScanController" customModule="SanTube" customModuleProvider="target">
+            <connections>
+                <outlet property="imvScan" destination="Kws-jU-1PE" id="FaO-th-mFn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwContent" destination="qah-Tv-VyY" id="DO0-pm-PD8"/>
+                <outletCollection property="vwRears" destination="Je0-59-fxB" collectionClass="NSMutableArray" id="gyH-as-QlG"/>
+                <outletCollection property="vwRears" destination="Bt7-3e-Y39" collectionClass="NSMutableArray" id="biD-Kc-KST"/>
+                <outletCollection property="vwRears" destination="acs-DY-uda" collectionClass="NSMutableArray" id="Xyd-6T-veX"/>
+                <outletCollection property="vwRears" destination="B1T-gn-XeT" collectionClass="NSMutableArray" id="gf3-ld-XRJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qah-Tv-VyY">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ALg-qT-OZZ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Je0-59-fxB" userLabel="top">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="223.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-Em-GYl">
+                                    <rect key="frame" x="0.0" y="223.5" width="375" height="200"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bt7-3e-Y39" userLabel="right">
+                                            <rect key="frame" x="0.0" y="0.0" width="87.5" height="200"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scan" translatesAutoresizingMaskIntoConstraints="NO" id="Kws-jU-1PE">
+                                            <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="agj-M8-vvd"/>
+                                                <constraint firstAttribute="height" constant="200" id="xCd-ZY-zPB"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acs-DY-uda" userLabel="left">
+                                            <rect key="frame" x="287.5" y="0.0" width="87.5" height="200"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kws-jU-1PE" firstAttribute="centerX" secondItem="Sc0-Em-GYl" secondAttribute="centerX" id="Zgb-mi-Yf8"/>
+                                    </constraints>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1T-gn-XeT" userLabel="bt">
+                                    <rect key="frame" x="0.0" y="423.5" width="375" height="223.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Sc0-Em-GYl" firstAttribute="centerY" secondItem="ALg-qT-OZZ" secondAttribute="centerY" id="iIK-gr-GCO"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ALg-qT-OZZ" secondAttribute="trailing" id="Ye7-tW-yOM"/>
+                        <constraint firstItem="ALg-qT-OZZ" firstAttribute="leading" secondItem="qah-Tv-VyY" secondAttribute="leading" id="r13-sm-Gex"/>
+                        <constraint firstItem="ALg-qT-OZZ" firstAttribute="top" secondItem="qah-Tv-VyY" secondAttribute="top" id="sNg-PP-dyK"/>
+                        <constraint firstAttribute="bottom" secondItem="ALg-qT-OZZ" secondAttribute="bottom" id="uVz-ig-fRg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qah-Tv-VyY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0vZ-hb-w3D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qah-Tv-VyY" secondAttribute="trailing" id="602-yn-tdM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qah-Tv-VyY" secondAttribute="bottom" id="gr1-X6-S76"/>
+                <constraint firstItem="qah-Tv-VyY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kh8-1b-Fda"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="scan" width="93" height="93"/>
+    </resources>
+</document>

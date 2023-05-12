@@ -1,0 +1,104 @@
+/* 
+  Localizable.strings
+  SanTube
+
+  Created by Dai Pham on 11/20/17.
+  Copyright © 2017 Sunrise Software Solutions. All rights reserved.
+*/
+
+// MARK: - in-app
+"email" = "Email";
+"password" = "Password";
+"new_account" = "New account";
+"forget_your_password" = "Forget your password";
+"login" = "Login";
+"login_with_facebook" = "Log in with Facebook";
+"let's_improve_your_experience_tap_at_least_3_your_favorites" = "Let's improve your experience. Please tapp at least 3 of your favourites";
+"welcome" = "Welcome";
+"feature_streams" = "Featured streams";
+"feature" = "Featured";
+"top_stream_view" = "Top streams view";
+"all_categories" = "All categories";
+"signin_with_facebook" = "Sign in with Facebook";
+"signin_with_email" = "Sign in with Email";
+"profile" = "Profile";
+"see_all" = "See all";
+"suggestions" = "Suggestions";
+"no_data_stream" = "No streams match.";
+"pull_to_refresh" = "Pull to refresh";
+"info" = "Info";
+"comments" = "Comments";
+"related_videos" = "Related videos";
+"api_token_expired" = "Your Access Token is either incorrect, invalid or expired. Please login again!";
+"service_unavailable" = "The server is currently unavailable.";
+"note_confirm_order" = "Please provide your informations. Seller will contact with you after received your order request.";
+"confirm_and_send_request" = "Confirm and send request";
+"note_select_order_item" = "Choose what you want to order";
+"order_items" = "Order items";
+"order_request_success" = "Order request sent. Thank you!";
+"confirm" = "confirm";
+"user_shipping_invalid" = "All field required.";
+"order_request_failed" = "Oops!! Somethings not working.";
+"no_data_order" = "No orders match.";
+"order_history" = "Orders history";
+"undo" = "Undo";
+"delete" = "Delete";
+"products" = "products";
+"want_to_buy_products" = "Want to buy _[]_ products";
+"want_to_buy_1_product" = "Want to buy 1 product";
+"order_change_status_success" = "Order request change status success.";
+"order_delete_failed" = "order reqeust delete failed.";
+"success" = "success";
+"exit" = "exit";
+"close" = "close";
+"ok" = "ok";
+"enter_your_name" = "enter your name";
+"enter_your_phone" = "enter your phone";
+"enter_your_address" = "enter your address";
+"this_video_has_been_stop" = "This livestream has been stopped";
+"auto_close" = "Close auto";
+"notice" = "notice";
+"detail" = "detail";
+"notice_stream_has_stopped" = "This stream has been stopped";
+"note_term_of_use" = "by sign up you agree to our <a href='http://santube.net/termofuse'>term of use</a> and <a href='http://santube.net/policies'>policies</a>";
+"sign_up" = "sign up";
+"sign_in" = "sign in";
+"confirm_password" = "confirm password";
+"forgot_password" = "Forgot password";
+"reset_password" = "reset password";
+"your_name" = "Your name";
+"note_reset_password" = "Enter the email address associated with your SanTube account. We'll email you a new password";
+"not_confirm_policies_yet" = "Please read & confirm SanTube term of use and policies!!!";
+"your_name_invalid" = "Your name invalid";
+"email_invalid" = "Email invalid";
+"password_invalid" = "Password must be at least 6 characters";
+"password_not_same" = "Password and Confirm password must match";
+"maybe_you_are_interested" = "You may like";
+"missing_email_fotgot_password" = "Missing your email requested.";
+"user_not_exist" = "Email dont exist.";
+"forgot_password_success" = "An email containing new password is sent to [_email_].";
+"please_login_to_use_this_function" = "Please login to use this function.";
+"login_failed" = "Incorrect email or password";
+"wrong_params_cant_send_to_server" = "Paramerters invalid. Check your data before action again.";
+"unknown_error" = "Something happen wrong with us service. Please report or contact to us.";
+"information_that_you_already_exists" = "information that you provide already exists";
+"information_that_you_invalid" = "information that you provide invalid";
+"you_dont_have_follower" = "You have not followed anyone yet";
+"title_input_stream_code" = "Enter stream code to\naccess stream quickly";
+"title_input_stream_password" = "Enter stream password \nto access stream quickly";
+"choose_reason_report" = "Choose a reason for reporting";
+"dont_like_this" = "I don't like this";
+"self_harm" = "self harm";
+"violence" = "Violence";
+"sexual_content" = "sexual content";
+"code_invalid" = "Input wrong code";
+"following_stream" = "following's streams";
+"report_success" = "report success!!!";
+
+// MARK: - showcase
+"click_here_to_create_stream" = "click here to create stream, sale products";
+"click_here_go_to_categories_page" = "click here to view more streams";
+"click_here_go_to_list_products_page" = "order shop's products";
+"click_here_go_to_list_sell_products" = "Sell your products";
+"click_here_upload_thumbnail_stream" = "custom stream thumbnail";
+"click_here_create_minigame" = "setup a Mini game";
